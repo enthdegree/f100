@@ -47,8 +47,8 @@ Here are common missing parts I noticed, together with replacement status:
 - Battery cartridge
     - The standard is Nikon MS-12 (4xAA batteries). Ebay price exceeds $100 which is obscene. 
     - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. 
-    - I attempted to print that design with PLA (Thank you HackManhattan) but it failed during assembly due to layer separation and the screws sheared out of their holes. If I tried printing it again I’d do it on its side rather than vertically as the designer recommends. Since then I bought a PA12 print off CraftCloud for $30.
-- Focus screen
+    - I attempted to print that design with PLA (Thank you HackManhattan) but it failed during assembly due to layer separation and the screws sheared out of their holes. 
+      If I tried printing it again, against the designer's recommendation I’d print it on its side instead of vetically. 
     - The standard is Nikon Type B Focusing Screen 2599. Ebay price is $28. 
     - No easy way to roll your own fresnel lens as far as I know. I don’t know why ground glass of the right thickness wouldn’t work OK. Dimensions in Figure 1.
 - Film door
@@ -70,7 +70,8 @@ Here are common missing parts I noticed, together with replacement status:
 My broken F100 came without the eyepiece and its battery cartridge was shattered. 
 The seller said this camera died from battery corrosion.
 By the time they cleaned the battery compartment the corrosion had already corrupted the inside of the camera.
-Behavior was erratic:
+Its behavior was erratic:
+
 - 1. Typically the camera would appear totally dead. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
 - 2. Rarely the camera would turn on and show the low battery indicator. No function or button worked in this state. If you pushed any button  here the indicator would start blinking.
 - 3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. Shutter releases 1/2000 and faster would usually misfire and show Err.
