@@ -111,18 +111,20 @@ Fine points of disassembly:
 </figure>
 
 
-Removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, water, then isopropyl alcohol.
-Corrosion cleanup was the same for the electronics was the same, blasting air at it with the rocket blower at all steps: 
+Corrosion cleanup for all the electronics followed the same pattern: 
 
-- Flaked off what I could with a toothpick
-- Wipe with water to dissolve the rest
-- Wipe with isopropyl alcohol and blast with air.
+- Flaked off what corrosion I could see with a toothpick
+- Wiped with water to dissolve the rest of the corrosion
+- Final wipe with isopropyl alcohol
+- all the while blasting air at it with a rocket blower
 
 Much of the contamination was almost-completely invisible:
 
 - There was contamination around the power FPC ribbon. Something around here was the plausibly cause for symptom 1. See Figure 4, red arrow. 
 - A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion kept this switch shorted, thus the body expected a higher voltage. See Figure 4, white arrow. 
 - Buttons on the top cover signal depression to the body by shorting a radial pad on the FPC to a ground rail. Symptom 3 was due to contaminants shorting the shutter switch closed around some contact arms. See Figures 5a and 5b.
+
+Separately, removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, rinsing thoroughly with water afterwards.
 
 
 
@@ -161,18 +163,19 @@ It could’ve been that simple…
 
 ### Stripped screw
 
-During disassembly a screw got stuck with corrosion and I stripped its head. 
+During disassembly I stripped the head of a stuck screw. 
 Richard Haw, linked above, has advice on this. 
-I managed to remove this stripped screw with a dot of white vinegar on its head and friction. 
+I managed to remove it with a dot of white vinegar and a lot of friction. 
 
-Sometimes you can cross-reference the F100 repair manual to a parts list to find the screw name. 
-For example CKT #778 appears on page D-1 of the repair manual, and in the parts list it has Part No. B1-14030FD indicating it is some 3.0mm-length M1.4 screw. 
-Not all the screws are named like this.
 
 Of course you don’t know what screw you need until it is lost or destroyed.
 If you are lucky the screw is one that came in a pair so a twin is available for measurements.
 One way to measure a machine screws is to paint it in ink with a ballpoint pen and take a print of it on ruled paper (rules are often 6.35mm apart). A picture of the print provides thread pitch, length and diameter via the ruler tool in Gimp or Inkscape. 
 See Figure 6.
+
+Sometimes you can cross-reference the F100 repair manual to a parts list to find the screw name. 
+For example CKT #778 appears on page D-1 of the repair manual, and in the parts list it has Part No. B1-14030FD indicating it is some 3.0mm-length M1.4 screw. 
+Not all the screws are named like this.
 
 
 <figure>
@@ -213,16 +216,16 @@ You need to tape the dial into place from the outside of the top cover during th
 
 ### Screw boss replacement with a heat insert
 
-Negligently, I failed to notice the obvious screw on the battery compartment while removing the baseplate and I ripped it off, taking most of its boss along with it. 
+Negligently, I failed to notice an obvious screw on the battery compartment while removing the baseplate and I ripped it off, taking most of its boss along with it. 
 Bad!
 I should not have used so much force, should have paid closer attention to the repair manual’s exploded diagrams and counted screws more.
 
 The camera would likely have been OK without this one screw but I wanted to see what it would take to do things “right."
-The original screw was some 4mm self-threading plastic screw.
-The plan was to replace it with a similarly shaped M1.6 screw and a brass heat insert.
-The remaining sliver of polycarbonate boss (marked “PC-GF20.AL") was probably not enough to hold the insert with any kind of load so the plan was to epoxy the insert into place.
+The original screw was some 4 mm self-threading plastic screw.
+My approach was to replace it with a similarly shaped M1.6 screw and a brass heat insert.
+The remaining sliver of polycarbonate boss (marked “PC-GF20.AL") was probably not enough to hold the insert with any kind of load so I encased the whole area with epoxy.
 
-I carved out a path on the shattered boss so the  heat-insert could be brought into near-correct position on it in free space:
+I carved out a path on the shattered boss so the heat-insert could be brought into near-correct position on it in free space:
 
 
 <figure>
