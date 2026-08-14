@@ -5,9 +5,9 @@ For my camera, an internal cleaning was all that was actually needed to get it w
 Unfortunately, for lack of documentation and knowledge I created a lot more work for myself than was necessary.
 Here is what I wish I knew before starting.
 
-# Preliminaries 
+## Preliminaries 
 
-Documentation
+### Documentation
 
 The Nikon F100 repair manual and parts list are necessary but not sufficient. They are terse, vague and with very narrow scope. Copies circulating online are very low-quality scans. 
 Afotandovy has some very useful disassembly photographs and comments: https://afotandovoy.blogspot.com/2013/02/reparacion-nikon-f100.html 
@@ -18,7 +18,7 @@ If I could go back in time I would urge several points to past-me:
 - Almost the instant you take off each tiny screw you will drop it on the floor and forget the hole it came out of.  Come up with some system to defend against these things.  Many of the screws look near-identical and almost none of them are interchangeable.  Tape and pill tray systems get knocked over and mix up the compartments.  I should have disassembled everything over a magnetic screw mat, and sorted screws according to their names from the repair manual.  
 - If I had known how annoying everything was to clean before reassembly I would have worn disposable gloves for everything. 
 
-Common tools:
+### Common tools
 
 - JIS 0 screwdrivers. iFixIt Minnow has JIS-compatible ones.
 - Fine tweezers
@@ -56,14 +56,16 @@ Here are common missing parts I noticed, together with replacement status:
     - The latch hooks frequently fail and a simple repair jig + metal hook kit can be bought for $20 which seems reasonable.
     - The whole film door is actually a simple passive electromechanical part that would be feasible (if a bit complex) to fully remanufacture, if/when it becomes economical to do so. I don’t have the expertise to do this, though.
 
+
 <figure>
-<img src="./images/f100_focus_screen_dims.jpg" alt=“f100_focus_screen_dims.jpg"> 
+<img src="./images/f100_focus_screen_dims.jpg" alt=“f100_focus_screen_dims.jpg" width="50%"> 
 <figcaption>
 <i>Figure 1: F100 focus screen dimensions. Numbers are mm.</i>
 </figcaption> 
 </figure>
 
-# Symptoms out of the box
+
+## Symptoms out of the box
 
 My broken F100 came without the eyepiece and its battery cartridge was shattered. 
 The seller said this camera died from battery corrosion.
@@ -76,7 +78,7 @@ Behavior was erratic:
 The batteries would sometimes heat up quickly. Scary.
 As soon as I noticed this I stopped testing. 
 
-# Disassembly and cleanup
+## Disassembly and cleanup
 
 Corrosion was visible at the seams around the battery compartment/grip.
 The top cover, baseplate and grip had to be removed to expose the contaminants that had leaked into the body.
@@ -89,20 +91,24 @@ Fine points of disassembly:
 - The metal grip/battery compartment is electrically grounded with a copper clip retained by one of the screws. A blue wire is soldered onto that clip, and the wire’s opposite end leads to some FPC deep inside the body. I desoldered the wire from the clip to avoid the wire snapping during grip removal. The wire and clip is visible in Figure 3, circled in white. 
 
 
+
 <figure>
-<img src="./images/f100_top_cover_removal.jpg" alt=“f100_top_cover_removal.jpg"> 
+<img src="./images/f100_top_cover_removal.jpg" alt=“f100_top_cover_removal.jpg" width="50%"> 
 <figcaption>
-<i>Figure 2: Top Cover removal, FPC in red. Contrary to the illustration the film door/rear cover is probably off the camera at this point. Basic focus screen dimensions shown also.</i>
+<i>Figure 2: Top Cover removal, FPC in red. Contrary to the illustration the film door/rear cover is probably off the camera at this point. </i>
 </figcaption> 
 </figure>
 
 
+
+
 <figure>
-<img src="./images/f100_grip_ground_clip.jpg" alt=“f100_grip_ground_clip.jpg"> 
+<img src="./images/f100_grip_ground_clip.jpg" alt=“f100_grip_ground_clip.jpg" width="50%"> 
 <figcaption>
 <i>Figure 3: F100 grip ground clip, soldered onto a blue wire. I desoldered this during disassembly for cleaning and safe handling.</i>
 </figcaption> 
 </figure>
+
 
 Removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, water, then isopropyl alcohol.
 Corrosion cleanup was the same for the electronics was the same, blasting air at it with the rocket blower at all steps: 
@@ -118,34 +124,41 @@ Much of the contamination was almost-completely invisible:
 - Buttons on the top cover signal depression to the body by shorting a radial pad on the FPC to a ground rail. Symptom 3 was due to contaminants shorting the shutter switch closed around some contact arms. See Figures 5a and 5b.
 
 
+
 <figure>
-<img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg"> 
+<img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg" width="50%"> 
 <figcaption>
 <i>Figure 4:  Power FPC with corrosion. The white arrow points to the MS-12 indicator spring-loaded contact with obvious green corrosion. The red arrow points to an FPC area that seemed clean initially but required thorough cleaning, especially around the cable edges. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water then isopropyl alcohol. It was sufficient to reach them this way rather than take more off the camera.</i> 
 </figcaption> 
 </figure>
 
 
+
+
 <figure>
-<img src="./images/f100_shutter_prongs.jpg" alt=“f100_shutter_prongs.jpg"> 
+<img src="./images/f100_shutter_prongs.jpg" alt=“f100_shutter_prongs.jpg" width="50%"> 
 <figcaption>
 <i>Figure 5a: F100 shutter spring contacts inside the top cover, above the front dial. There are 3 prongs in a stack around the white arrow. Flecks of some contaminant visible on the base prong. You need a toothpick saturated in cleaning material to get close to the base of each prong. I could only detect the cleaning was effective by measuring the shutter-to-ground ‘open’ resistance slowly climb on the multimeter up from 7 kOhm pre-cleaning (see Figure 5b). </i> 
 </figcaption> 
 </figure>
 
+
+
 <figure>
-<img src="./images/f100_shutter_prongs.jpg" alt=“f100_top_cover_radial_pads.jpg"> 
+<img src="./images/f100_top_cover_radial_pads.jpg" alt=“f100_top_cover_radial_pads.jpg" width="50%"> 
 <figcaption>
-<i>Figure 5b: F100 top cover FPC radial pads used for communicating button state to the body. Button depression is supposed to short each of those pads to a ground rail. Ground is electrically connected to some other exposed metal which is a more convenient measurement point.  </i> 
+<i>Figure 5b: F100 top cover FPC radial pads used for communicating button state to the body. Button depression is supposed to short each of those pads to a ground rail. Ground is electrically connected to some other exposed metal which is a more convenient measurement point. </i> 
 </figcaption> 
 </figure>
 
-..and then everything is supposed to go back on the way it came off. The grip rubber and diopter cover need new double-sided tape.
+
+..and then everything is supposed to go back on the way it came off. 
+The grip rubber and diopter cover need new double-sided tape.
 It could’ve been that simple… 
 
-# Addressing Damage Caused during Disassembly (The Odyssey)
+## Addressing damage caused during disassembly (The Odyssey)
 
-## Stripped screw
+### Stripped screw
 
 During disassembly a screw got stuck with corrosion and I stripped its head. 
 Richard Haw, linked above, has advice on this. 
@@ -160,17 +173,19 @@ If you are lucky the screw is one that came in a pair so a twin is available for
 One way to measure a machine screws is to paint it in ink with a ballpoint pen and take a print of it on ruled paper (rules are often 6.35mm apart). A picture of the print provides thread pitch, length and diameter via the ruler tool in Gimp or Inkscape. 
 See Figure 6.
 
+
 <figure>
-<img src="./images/machine_screw_print.jpg" alt="machine_screw_print.jpg"> 
+<img src="./images/machine_screw_print.jpg" alt="machine_screw_print.jpg" width="50%"> 
 <figcaption>
 <i>Figure 6: A print of a machine screw. 7 threads span 96 px and 6.35mm spans 173 px indicating a thread pitch of around 0.5 mm.</i>
 </figcaption> 
 </figure>
 
 
-## Film door rebuild / reattaching the focus selector D-pad
 
-The film door’s focus-selector D-pad popped off during my ill-advised cleaning. 
+### Reattaching the focus selector D-pad to the film door
+
+The film door’s focus-selector D-pad popped off during cleaning. 
 That button is mechanically attached to the film door by a collar that’s pressed on from the inside of the door. 
 It’s impossible to reattach without disassembling the door. 
 Avoid this situation. It isn’t fun… 
@@ -186,14 +201,16 @@ Figure 7 shows the backside of what you are lifting off.
 For reassembly the hard part is getting the dial assembly back in place. 
 You need to tape the dial into place from the outside of the top cover during their reassembly so that it stays suspended, so that you can screw the rotating contact pin assembly + FPC back down as you put the internal panel back on. 
 
+
 <figure>
-<img src="./images/f100_rear_cover_internal_panel.jpg" alt="f100_rear_cover_internal_panel.jpg"> 
+<img src="./images/f100_rear_cover_internal_panel.jpg" alt="f100_rear_cover_internal_panel.jpg" width="50%"> 
 <figcaption>
 <i>Figure 7: F100 rear cover internal panel. Red arrow at an FPC that sits under the focus area selector dial. The FPC is normally screwed onto the body of the back. Tape on the FPC (white arrows) also tacks the FPC to the body of the rear cover. </i>
 </figcaption> 
 </figure>
 
-## Screw boss replacement with a heat insert
+
+### Screw boss replacement with a heat insert
 
 Negligently, I failed to notice the obvious screw on the battery compartment while removing the baseplate and I ripped it off, taking most of its boss along with it. 
 Bad!
@@ -206,53 +223,63 @@ The remaining sliver of polycarbonate boss (marked “PC-GF20.AL") was probably 
 
 I carved out a path on the shattered boss so the  heat-insert could be brought into near-correct position on it in free space:
 
+
 <figure>
-<img src="./images/f100_shattered_boss.jpg" alt="f100_shattered_boss.jpg"> 
+<img src="./images/f100_shattered_boss.jpg" alt="f100_shattered_boss.jpg" width="50%"> 
 <figcaption>
 <i>Figure 8: F100 with a shattered screw boss :(. Some plastic has been gauged out of the shattered area to make room for a heat insert… </i>
 </figcaption> 
 </figure>
 
+
 Then I used the baseplate as a jig. 
 With the baseplate+screw+insert set on the body I held a soldering iron at 380C on the screwhead for a while, which softened the polycarbonate enough for the baseplate to press the insert into proper position on what remained of the old boss.
 
+
 <figure>
-<img src="./images/f100_baseplate_with_insert.jpg" alt="f100_baseplate_with_insert.jpg"> 
+<img src="./images/f100_baseplate_with_insert.jpg" alt="f100_baseplate_with_insert.jpg" width="50%"> 
 <figcaption>
 <i>Figure 9: F100 baseplate with the insert on. </i>
 </figcaption> 
 </figure>
 
+
+
 <figure>
-<img src="./images/f100_baseplate_set_as_jig.jpg" alt="f100_baseplate_set_as_jig.jpg"> 
+<img src="./images/f100_baseplate_set_as_jig.jpg" alt="f100_baseplate_set_as_jig.jpg" width="50%"> 
 <figcaption>
-<i>Figure 10: Baseplate set on the body as shown in Figure 9. A hot iron was held onto the screwhead to conduct heat onto the brass insert, to melt the insert onto what remained of the boss.</i>
+<i>Figure 10: Baseplate as shown in Figure 9 set on the body. A hot iron was held onto the screwhead to conduct heat onto the brass insert, to melt the insert onto what remained of the boss.</i>
 </figcaption> 
 </figure>
 
+
+
 <figure>
-<img src="./images/f100_insert_embedded_into_boss.jpg" alt="f100_insert_embedded_into_boss.jpg"> 
+<img src="./images/f100_insert_embedded_into_boss.jpg" alt="f100_insert_embedded_into_boss.jpg" width="50%"> 
 <figcaption>
 <i>Figure 11: Partially-set brass insert after melting. </i>
 </figcaption> 
 </figure>
+
 
 Finally I used a toothpick to coat the partially-mounted insert and surrounding area with epoxy. 
 I quickly reinstalled the baseplate+screw before letting the epoxy set. 
 Gorilla Ultimate epoxy is one of the most foul things I have smelled in my life. 
 Do this outside!!!
 
+
 <figure>
-<img src="./images/f100_epoxied_insert.jpg" alt="f100_epoxied_insert.jpg"> 
+<img src="./images/f100_epoxied_insert.jpg" alt="f100_epoxied_insert.jpg" width="50%"> 
 <figcaption>
 <i>Figure 10: Finished insert attachment. </i>
 </figcaption> 
 </figure>
 
+
 This ordeal took two tries to get right: in the first try I tried to eyeball the insert position without the baseplate as a jig.
 Although position seemed OK to the eye, in reality it was poor enough that trying to reassemble it sheared off the head of my screw.
 
-# Obscure true fact
+## Obscure true fact
 
 In the early 2000s Leo Bodnar did some fascinating work on the F100’s predecessor, the F90X:
 - https://geocities.ws/leobodnar/F90X_rewind.html 
@@ -273,20 +300,19 @@ Finding obscure technical information is pretty miserable in the age of AI.
 
 Google hasn’t worked right since before covid. 
 Its replacement, Claude, always tells me I’m a dangerous incompetent who should give up on everything and call 988. 
-Sometimes through its ugly condescension it accidentally leaks valuable information and who it learned from.
+Sometimes through its ugly condescension Claude accidentally leaks valuable information and who it learned from.
 Sadly I think this will be patched soon. 
 
 Forums, especially Reddit, are virtually exclusively populated by deeply low-rent people.
 The Redditor is a uniquely brittle, ignorant, over-socialized, navel-gazing, low-agency creature. 
-If you do anything outside their very limited script of interactions (e.g. seek or provide novel information) they will seize up and start shrieking like at the end of Invasion of the Bodysnatchers (1978). 
+If you do anything outside its very limited script of interactions (e.g. seek or provide novel information) they will seize up and start shrieking like at the end of Body Snatchers (1978). 
 The small, over-moderated ‘specialist sub-Reddits,’ the ones everyone’s always insisting are different, are equally if not more bad.
 If you use Reddit that is embarrassing and you are a bad person.
 
 <figure>
-<img src="./images/bonzi_buddy.jpg" alt="bonzi_buddy.jpg"> 
+<img src="./images/bonzi_buddy.jpg" alt="bonzi_buddy.jpg" width="50%"> 
 <figcaption>
 <i>A wider communication gamut than Redditors are capable of. </i>
 </figcaption> 
 </figure>
-
 
