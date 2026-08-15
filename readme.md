@@ -203,7 +203,7 @@ Figure 7 shows the backside of what you are lifting off.
 - The FPC on the panel is tacked to the cover’s body with two pieces of double-sided tape (white arrows in Figure 7). The tape can be loosened with a toothpick saturated with isopropyl alcohol. 
 
 For reassembly the hard part is getting the dial assembly back in place. 
-You need to tape the dial into place from the outside of the top cover during their reassembly so that it stays suspended, so that you can screw the rotating contact pin assembly + FPC back down as you put the internal panel back on. 
+You need to tape the dial into place from the outside of the rear cover during their reassembly so that it stays suspended, so that you can screw the rotating contact pin assembly + FPC back down into it as you replace the internal panel assembly. 
 
 
 <figure>
