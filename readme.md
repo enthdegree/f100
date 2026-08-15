@@ -225,7 +225,7 @@ The original screw was some 4 mm self-threading plastic screw.
 My approach was to replace it with a similarly shaped M1.6 screw and a brass heat insert.
 The remaining sliver of polycarbonate boss (marked “PC-GF20.AL") was probably not enough to hold the insert with any kind of load so I encased the whole area with epoxy.
 
-I carved out a path on the shattered boss so the heat-insert could be brought into near-correct position on it in free space:
+I carved away a segment of the shattered boss so the brass heat-insert could be brought into near-correct position in free space:
 
 
 <figure>
