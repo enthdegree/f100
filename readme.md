@@ -131,7 +131,7 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 <figure>
 <img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg" width="50%"> 
 <figcaption>
-<i>Figure 4:  Power FPC with corrosion. The white arrow points to the MS-12 indicator spring-loaded contact with obvious green corrosion. The red arrow points to an FPC area that seemed clean initially but required thorough cleaning, especially around the cable edges. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water then isopropyl alcohol. It was sufficient to reach them this way rather than take more off the camera.</i> 
+<i>Figure 4:  Power FPC with corrosion. The white arrow points to the MS-12 indicator spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. It was sufficient to reach them this way rather than through more disassembly.</i> 
 </figcaption> 
 </figure>
 
