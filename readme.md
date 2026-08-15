@@ -9,8 +9,8 @@ Here is what I wish I knew before starting.
 
 ### Documentation
 
-The Nikon F100 repair manual and parts list are necessary but not sufficient. They are terse, vague and with very narrow scope. Copies circulating online are very low-quality scans. 
-Afotandovy has some very useful disassembly photographs and comments: https://afotandovoy.blogspot.com/2013/02/reparacion-nikon-f100.html 
+The Nikon F100 repair manual and parts list are necessary but not sufficient. They are terse, vague and narrow im scope. Copies circulating online are low-quality scans. 
+Afotandovy has some useful disassembly photographs and comments: https://afotandovoy.blogspot.com/2013/02/reparacion-nikon-f100.html 
 
 If I could go back in time I would urge several points to past-me:
 
