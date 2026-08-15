@@ -15,7 +15,7 @@ Afotandovy has some useful disassembly photographs and comments: https://afotand
 If I could go back in time I would urge several points to past-me:
 
 - Read Richard Haw’s brief general camera repair fundamentals articles https://richardhaw.com/lens-camera-repair-fundamentals/  Forcing things when I should have taken a break led to unnecessary damage that was difficult to repair
-- Almost the instant you take off each tiny screw you will drop it on the floor and forget the hole it came out of.  Come up with some system to defend against these things.  Many of the screws look near-identical and almost none of them are interchangeable.  Tape and pill tray systems get knocked over and mix up the compartments.  I should have disassembled everything over a magnetic screw mat, and sorted screws according to their names from the repair manual.  
+- Almost the instant you take off each tiny screw you will drop it on the floor and forget the hole it came out of.  Come up with some system to defend against these things.  Many of the screws look near-identical and almost none of them are interchangeable.  Pill tray systems will get knocked over and you will mix up the compartments.  I should have disassembled everything over a magnetic screw mat, and sorted screws according to their names from the repair manual.  
 - If I had known how annoying everything was to clean before reassembly I would have worn disposable gloves for everything. 
 
 ### Common tools
