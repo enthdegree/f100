@@ -94,7 +94,7 @@ Fine points of disassembly:
 
 
 <figure>
-<img src="./images/f100_top_cover_removal.jpg" alt=“f100_top_cover_removal.jpg" width="50%"> 
+<img src="./images/f100_top_cover_removal.jpg" alt=“f100_top_cover_removal.jpg" width="95%"> 
 <figcaption>
 <i>Figure 2: Top Cover removal, FPC in red. Contrary to the illustration the film door/rear cover is probably off the camera at this point. </i>
 </figcaption> 
