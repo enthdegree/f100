@@ -9,7 +9,7 @@ Here is what I wish I knew before starting.
 
 ### Documentation
 
-The Nikon F100 repair manual and parts list are necessary but not sufficient. They are terse, vague and narrow im scope. Copies circulating online are low-quality scans. 
+The Nikon F100 repair manual and parts list are necessary but not sufficient. They are terse, vague and narrow in scope. Copies circulating online are low-quality scans. 
 Afotandovy has some useful disassembly photographs and comments: https://afotandovoy.blogspot.com/2013/02/reparacion-nikon-f100.html 
 
 If I could go back in time I would urge several points to past-me:
@@ -300,9 +300,8 @@ F100 manual’s EEPROM register table suspiciously names a “FILM TONGUE" regis
 # Tirade 
 
 On the outset a successful repair seemed too hard and low-likelihood.
-Looking back I think it only appeared infeasible because of poor information availability.
+Looking back I think it only seemed so because of poor information availability.
 Finding obscure technical information is pretty miserable in the age of AI.
-
 Google hasn’t worked right since before covid. 
 Its replacement, Claude, always tells me I’m a dangerous incompetent who should give up on everything and call 988. 
 Sometimes through its ugly condescension Claude accidentally leaks valuable information and who it learned from.
