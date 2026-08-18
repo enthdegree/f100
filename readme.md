@@ -289,11 +289,12 @@ In the early 2000s Leo Bodnar did some fascinating work on the F100’s predeces
 - https://geocities.ws/leobodnar/F90X_rewind.html 
 - https://geocities.ws/leobodnar/f90secrets.html 
 
-He says the DX contact pads have an undocumented serial line that lets you overwrite EEPROM registers. 
-One register controls how much of the film leader the rewind operation leaves exposed.
+Pads near the DX reading pins have an undocumented serial line that let you overwrite EEPROM registers. 
+Leo succeeded in writing to a register on an F90x that controls how much of the film leader the rewind operation leaves exposed.
 Unfortunately the zips on that page are not available anymore. 
-They likely would have described the serial pinout on the DX contacts and serial interface. (The interface may be the same as the one on the 10-pin, which does have known, surviving implementations)
- 
+They likely would have described the serial interface. 
+
+I speculate the interface may be the same as the one on the 10-pin, which does have known, surviving implementations.
 F100 manual’s EEPROM register table suspiciously names a “FILM TONGUE" register at 0x0081 for “Ver 4.XX" and at 0x006E for “Ver 5.XX"… there is also a “CHECK SUM" register which may need handling too.
 
 # Tirade 
