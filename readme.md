@@ -49,8 +49,10 @@ Here are common missing parts I noticed, together with replacement status:
     - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. 
     - I attempted to print that design with PLA (Thank you HackManhattan) but it failed during assembly due to layer separation and the screws sheared out of their holes. 
       If I tried printing it again, against the designer's recommendation I’d print it on its side instead of vetically. 
+- Focus screen
     - The standard is Nikon Type B Focusing Screen 2599. Ebay price is $28. 
-    - No easy way to roll your own fresnel lens as far as I know. I don’t know why ground glass of the right thickness wouldn’t work OK. Dimensions in Figure 1.
+    - There are actually aftermarket screens (with split prism!) with correct dimensions on aliexpress: "Dual 45 degree Split Image Focus Focusing Screen for Nikon D1 D1H D1X F100 PR129"
+    - Richard Haw has described cutting down and shimming an existing focus screen of a different model. I don’t know why ground glass of the right thickness wouldn’t work OK. Dimensions in Figure 1.
 - Film door
     - The assembly is 1B999-938 in the parts list. Replacements sell for $100 which is obscene. 
     - The latch hooks frequently fail and a simple repair jig + metal hook kit can be bought for $20 which seems reasonable.
