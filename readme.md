@@ -29,9 +29,9 @@ If I could go back in time I would urge several points to past-me:
     - Toothpicks and Q-tips 
 - Cleaning chemicals:
     - Distilled water
-    - 99% Isopropyl alcohol (be really limited with using this on the polycarbonate body as it makes it brittle)
-    - white vinegar (not for use on the polycarbonate body but rather for cleaning rust for metal parts that were removed from it)
-    - acetone (turns the internal polycarbonate body into mush instantly on contact. essentially destructive. extremely limited applicability if any. only thing I’d use it for is as a last resort for extremely tight screws, applied with a toothpick)
+    - 99% Isopropyl alcohol (be really limited with using this on the internal "PC-GF20.AL" plastic body as it makes it brittle)
+    - white vinegar (not for use on the plastic but rather for cleaning rust for metal parts that were removed from it)
+    - acetone (turns the plastic into mush instantly on contact. essentially destructive. extremely limited applicability if any. only thing I’d use it for is as a last resort for extremely tight screws, applied with a toothpick)
 - Strong double-sided tape. I used Scotch 9495LE.
 - Soldering iron (to get some delicate ground wires off without damage)
 - Box of 100 nitride gloves 
@@ -222,13 +222,10 @@ Negligently, I failed to notice an obvious screw on the battery compartment whil
 Bad!
 I should not have used so much force, should have paid closer attention to the repair manual’s exploded diagrams and counted screws more.
 
-The camera would likely have been OK without this one screw but I wanted to see what it would take to do things “right."
-The original screw was some 4 mm self-threading plastic screw.
-My approach was to replace it with a similarly shaped M1.6 screw and a brass heat insert.
-The remaining sliver of polycarbonate boss (marked “PC-GF20.AL") was probably not enough to hold the insert with any kind of load so I encased the whole area with epoxy.
+The camera would likely have been OK without this one screw but I wanted to set things “right."
+My approach was to replace it with a similarly shaped M1.6 screw and a brass heat insert encased in epoxy.
 
-I carved away a segment of the shattered boss so the brass heat-insert could be brought into near-correct position in free space:
-
+I carved away a segment of the shattered boss so the brass heat-insert could be brought nearly into position in free space:
 
 <figure>
 <img src="./images/f100_shattered_boss.jpg" alt="f100_shattered_boss.jpg" width="50%"> 
@@ -237,10 +234,8 @@ I carved away a segment of the shattered boss so the brass heat-insert could be 
 </figcaption> 
 </figure>
 
-
 Then I used the baseplate as a jig. 
-With the baseplate+screw+insert set on the body I held a soldering iron at 380C on the screwhead for a while, which softened the polycarbonate enough for the baseplate to press the insert into proper position on what remained of the old boss.
-
+With the baseplate+screw+insert set on the body I held a soldering iron on the screwhead at 380 C, which eventually softened the plastic enough for the baseplate to set the insert into position.
 
 <figure>
 <img src="./images/f100_baseplate_with_insert.jpg" alt="f100_baseplate_with_insert.jpg" width="50%"> 
@@ -248,7 +243,6 @@ With the baseplate+screw+insert set on the body I held a soldering iron at 380C 
 <i>Figure 9: F100 baseplate with the insert on. </i>
 </figcaption> 
 </figure>
-
 
 
 <figure>
@@ -259,7 +253,6 @@ With the baseplate+screw+insert set on the body I held a soldering iron at 380C 
 </figure>
 
 
-
 <figure>
 <img src="./images/f100_insert_embedded_into_boss.jpg" alt="f100_insert_embedded_into_boss.jpg" width="50%"> 
 <figcaption>
@@ -267,11 +260,11 @@ With the baseplate+screw+insert set on the body I held a soldering iron at 380C 
 </figcaption> 
 </figure>
 
-
 Finally I used a toothpick to coat the partially-mounted insert and surrounding area with epoxy. 
 I quickly reinstalled the baseplate+screw before letting the epoxy set. 
+
 Gorilla Ultimate epoxy is one of the most foul things I have smelled in my life. 
-Do this outside!!!
+Do this outside!
 
 
 <figure>
