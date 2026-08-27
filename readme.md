@@ -90,10 +90,8 @@ Also helpful are the afotandovy photographs up to and not including removal of t
 
 Fine points of disassembly: 
 
-- There is a FPC (Flexible Printed Circuit) connecting the top cover to the camera body under the side opposite the LCD. It is easy to rip if you don’t know it’s there. To remove the top cover safely I lifted it off lift it off as pictured in Figure 2. You have to lift the cover off with one hand and unscrew the two retainer screws with the other. 
-- The metal grip/battery compartment is electrically grounded with a copper clip retained by one of the screws. A blue wire is soldered onto that clip, and the wire’s opposite end leads to some FPC deep inside the body. I desoldered the wire from the clip to avoid the wire snapping during grip removal. The wire and clip is visible in Figure 3, circled in white. 
-
-
+- There is a FPC (Flexible Printed Circuit) connecting the top cover to the camera body under the side opposite the LCD. It is easy to rip if you don’t know it’s there. To remove the top cover safely I lifted it off lift it off as pictured in Figure 2. You have to lift the cover off with one hand and unscrew the two retainer screws with the other. See page A-30 of the repair manual.
+- The metal grip/battery compartment is electrically grounded with a copper clip retained by one of the screws. See "Grip" on page D-13 of the repair manual. A blue wire is soldered onto that clip, leading into to some FPC inside the body. I desoldered it to avoid the wire snapping during handling. The wire and clip is visible in Figure 3, circled in white. 
 
 <figure>
 <img src="./images/f100_top_cover_removal.jpg" alt=“f100_top_cover_removal.jpg" width="95%"> 
@@ -102,16 +100,12 @@ Fine points of disassembly:
 </figcaption> 
 </figure>
 
-
-
-
 <figure>
 <img src="./images/f100_grip_ground_clip.jpg" alt=“f100_grip_ground_clip.jpg" width="50%"> 
 <figcaption>
 <i>Figure 3: F100 grip ground clip, soldered onto a blue wire. I desoldered this during disassembly for cleaning and safe handling.</i>
 </figcaption> 
 </figure>
-
 
 Corrosion cleanup for all the electronics followed the same pattern: 
 
@@ -128,17 +122,12 @@ Much of the contamination was almost-completely invisible:
 
 Separately, removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, rinsing thoroughly with water afterwards.
 
-
-
 <figure>
 <img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg" width="50%"> 
 <figcaption>
 <i>Figure 4:  Power FPC with corrosion. The white arrow points to the MS-12 indicator spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. It was sufficient to reach them this way rather than through more disassembly.</i> 
 </figcaption> 
 </figure>
-
-
-
 
 <figure>
 <img src="./images/f100_shutter_prongs.jpg" alt=“f100_shutter_prongs.jpg" width="50%"> 
@@ -152,7 +141,7 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 <figure>
 <img src="./images/f100_top_cover_radial_pads.jpg" alt=“f100_top_cover_radial_pads.jpg" width="50%"> 
 <figcaption>
-<i>Figure 5b: F100 top cover FPC radial pads used for communicating button state to the body. Button depression is supposed to short each of those pads to a ground rail. Ground is electrically connected to some other exposed metal which is a more convenient measurement point. </i> 
+<i>Figure 5b: F100 top cover FPC radial pads used for communicating button state to the body. Button depression is supposed to short each of those pads to a ground rail. Ground is electrically connected to some other exposed metal which is a more convenient measurement point. See repair manual page E 8 for full pinout. </i> 
 </figcaption> 
 </figure>
 
@@ -204,14 +193,15 @@ Figure 7 shows the backside of what you are lifting off.
 - Like the top cover FPC, the area of the FPC near the focus area selector dial area is screwed down and you will rip it if you don’t know it’s there. As you lift it off you have to unscrew a screw normally holding the FPC at the red arrow in Figure 7.
 - The FPC on the panel is tacked to the cover’s body with two pieces of double-sided tape (white arrows in Figure 7). The tape can be loosened with a toothpick saturated with isopropyl alcohol. 
 
-For reassembly the hard part is getting the dial assembly back in place. 
-You need to tape the dial into place from the outside of the rear cover during their reassembly so that it stays suspended, so that you can screw the rotating contact pin assembly + FPC back down into it as you replace the internal panel assembly. 
+For reassembly the hard part is getting the focus area selector dial back into place.
+You need to tape the dial on from the outside during reassembly so that it stays in place temporarily.
+Then as you lower the internal panel back in place, you can screw the sliding contact pin assembly + FPC back down into the dial. 
 
 
 <figure>
 <img src="./images/f100_rear_cover_internal_panel.jpg" alt="f100_rear_cover_internal_panel.jpg" width="50%"> 
 <figcaption>
-<i>Figure 7: F100 rear cover internal panel. White arrows: Tape tacks the FPC to the body of the rear cover. Red arrow: the FPC (thus the whole panel) is normally clamped onto the the body of the back door by a large-headed screw that goes here. </i>
+<i>Figure 7: F100 rear cover internal panel. White arrows: Tape tacks the FPC to the body of the rear cover. Red arrow: the FPC (thus the whole panel) is normally clamped onto the body of the back door through wide-headed screw that goes into the focus area selector dial through this hole </i>
 </figcaption> 
 </figure>
 
