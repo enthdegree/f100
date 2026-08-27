@@ -90,7 +90,7 @@ Also helpful are the afotandovy photographs up to and not including removal of t
 
 Fine points of disassembly: 
 
-- There is an FPC connecting the top cover to the camera body under the side opposite the LCD. It is easy to rip if you don’t know it’s there. To remove the top cover safely I lifted it off lift it off as pictured in Figure 2. You have to lift the cover off with one hand and unscrew the two retainer screws with the other. 
+- There is a FPC (Flexible Printed Circuit) connecting the top cover to the camera body under the side opposite the LCD. It is easy to rip if you don’t know it’s there. To remove the top cover safely I lifted it off lift it off as pictured in Figure 2. You have to lift the cover off with one hand and unscrew the two retainer screws with the other. 
 - The metal grip/battery compartment is electrically grounded with a copper clip retained by one of the screws. A blue wire is soldered onto that clip, and the wire’s opposite end leads to some FPC deep inside the body. I desoldered the wire from the clip to avoid the wire snapping during grip removal. The wire and clip is visible in Figure 3, circled in white. 
 
 
@@ -211,7 +211,7 @@ You need to tape the dial into place from the outside of the rear cover during t
 <figure>
 <img src="./images/f100_rear_cover_internal_panel.jpg" alt="f100_rear_cover_internal_panel.jpg" width="50%"> 
 <figcaption>
-<i>Figure 7: F100 rear cover internal panel. Red arrow at an FPC that sits under the focus area selector dial. The FPC is normally screwed onto the body of the back. Tape on the FPC (white arrows) also tacks the FPC to the body of the rear cover. </i>
+<i>Figure 7: F100 rear cover internal panel. White arrows: Tape tacks the FPC to the body of the rear cover. Red arrow: the FPC (thus the whole panel) is normally clamped onto the the body of the back door by a large-headed screw that goes here. </i>
 </figcaption> 
 </figure>
 
