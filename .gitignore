@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,windows,emacs,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,windows,emacs,vim
 
+*.pdf
+Documents
+
 ### Emacs ###
 # -*- mode: gitignore; -*-
 *~
