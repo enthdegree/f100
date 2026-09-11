@@ -117,7 +117,7 @@ Corrosion cleanup for all the electronics followed the same pattern:
 Much of the contamination was almost-completely invisible:
 
 - There was contamination around the power FPC ribbon. Something around here was the plausibly cause for symptom 1. See Figure 4, red arrow. 
-- A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion kept this switch shorted, thus the body expected a higher voltage. See Figure 4, white arrow. 
+- A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion interfered with this switch opening, thus the body expected a higher voltage. Very fresh batteries could have put the MS-12's 4xAA just above the failure threshold for 6xAA on the bigger MS-15 grip (which has an additional peg on the MS-12). See Figure 4, white arrow. In the repair manual A-31 and R-5 list relevant voltages.
 - Buttons on the top cover signal depression to the body by shorting a radial pad on the FPC to a ground rail. Symptom 3 was due to contaminants shorting the shutter switch closed around some contact arms. See Figures 5a and 5b.
 
 Separately, removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, rinsing thoroughly with water afterwards.
