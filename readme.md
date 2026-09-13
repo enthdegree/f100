@@ -38,7 +38,7 @@ If I could go back in time I would urge several points to past-me:
 
 A lot of for-parts F100s on sale already have some essential components gutted. 
 This makes the economics of repairing them pretty bad. 
-Here are common missing parts I noticed, together with replacement status:
+Here are common missing parts I noticed, together with their replacement status:
 
 - Eyepiece
     - The standard is Nikon Viewfinder Eyepiece 2927. Ebay price is $25.
@@ -46,9 +46,7 @@ Here are common missing parts I noticed, together with replacement status:
     - The ring for the F100 seems to have dimensions close or identical to the Nikon DK-17 (for which free replacement models are published), but I haven’t yet found empirical evidence they are interchangeable. You’d still need to find a glass window for those too.
 - Battery cartridge
     - The standard is Nikon MS-12 (4xAA batteries). Ebay price exceeds $100 which is obscene. 
-    - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. 
-    - I attempted to print that design with PLA (Thank you HackManhattan) but it failed during assembly due to layer separation and the screws sheared out of their holes. 
-      If I tried printing it again, against the designer's recommendation I’d print it on its side instead of vetically. 
+    - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. A section below details my experience with prints of this design.
 - Focus screen
     - The standard is Nikon Type B Focusing Screen 2599. Ebay price is $28. 
     - There are actually aftermarket screens (with split prism!) with correct dimensions on aliexpress: "Dual 45 degree Split Image Focus Focusing Screen for Nikon D1 D1H D1X F100 PR129"
@@ -74,9 +72,9 @@ The seller said this camera died from battery corrosion.
 By the time they cleaned the battery compartment the corrosion had already corrupted the inside of the camera.
 Its behavior was erratic:
 
-- 1. Typically the camera would appear totally dead. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
-- 2. Rarely the camera would turn on and show the low battery indicator. No function or button worked in this state. If you pushed any button  here the indicator would start blinking.
-- 3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. Shutter releases 1/2000 and faster would usually misfire and show Err.
+1. Typically the camera would appear totally dead. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
+2. Rarely the camera would turn on and show the low battery indicator. No function or button worked in this state. If you pushed any button  here the indicator would start blinking.
+3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. Shutter releases 1/2000 and faster would usually misfire and show Err.
 
 The batteries would sometimes heat up quickly. Scary.
 As soon as I noticed this I stopped testing. 
@@ -114,10 +112,10 @@ Corrosion cleanup for all the electronics followed the same pattern:
 - Final wipe with isopropyl alcohol
 - all the while blasting air at it with a rocket blower
 
-Much of the contamination was almost-completely invisible:
+The symptoms were likely caused by contamination:
 
-- There was contamination around the power FPC ribbon. Something around here was the plausibly cause for symptom 1. See Figure 4, red arrow. 
-- A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion interfered with this switch opening, thus the body expected a higher voltage from an MB-15 6xAA (The MB-15 has an additional peg compared to the MS-12). Very fresh batteries could have put the MS-12's 4xAA just above the failure threshold for MB-15, causing intermittent failures. See Figure 4, white arrow pointing at the contact unique to the MB-15. In the repair manual A-31 and R-5 list relevant voltage ranges.
+- There was crud around the power FPC ribbon. Something around here was the plausibly cause for symptom 1. See Figure 4, red arrow. 
+- A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion interfered with this switch opening, thus the body expected a higher voltage from an MB-15 6xAA (The MB-15 has an additional peg compared to the MS-12. The white arrow in Figure 4 points at the contact unique to the MB-15). Very fresh batteries could have put the MS-12's 4xAA just above the failure threshold for MB-15, causing intermittent failures. A section below includes some observations for various voltage ranges. 
 - Buttons on the top cover signal depression to the body by shorting a radial pad on the FPC to a ground rail. Symptom 3 was due to contaminants shorting the shutter switch closed around some contact arms. See Figures 5a and 5b.
 
 Separately, removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, rinsing thoroughly with water afterwards.
@@ -125,7 +123,7 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 <figure>
 <img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg" width="50%"> 
 <figcaption>
-<i>Figure 4:  Power FPC with corrosion. The white arrow points to the MS-12 indicator spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. It was sufficient to reach them this way rather than through more disassembly.</i> 
+<i>Figure 4:  Power FPC with corrosion. The white arrow points to the battery spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. It was sufficient to reach them this way rather than through more disassembly.</i> 
 </figcaption> 
 </figure>
 
@@ -156,8 +154,7 @@ It could’ve been that simple…
 
 During disassembly I stripped the head of a stuck screw. 
 Richard Haw, linked above, has advice on this. 
-I managed to remove it with a dot of white vinegar and a lot of friction. 
-
+I managed to remove it with a dot of white vinegar and a lot of friction through a flathead screwdriver. 
 
 Of course you don’t know what screw you need until it is lost or destroyed.
 If you are lucky the screw is one that came in a pair so a twin is available for measurements.
@@ -176,8 +173,6 @@ Not all the screws are named like this.
 </figcaption> 
 </figure>
 
-
-
 ### Reattaching the focus selector D-pad to the film door
 
 The film door’s focus-selector D-pad popped off during cleaning. 
@@ -188,15 +183,14 @@ Avoid this situation. It isn’t fun…
 This is an obscure repair, I can’t find anyone doing it. 
 Actually there is a nice explosion diagram of it on Page D-26 of the F100 assembly manual (“rear cover"). 
 The delicate part is lifting the internal black panel off the rear cover. 
-Figure 7 shows the backside of what you are lifting off.
+Figure 7 shows the backside of what you must lift off.
 
 - Like the top cover FPC, the area of the FPC near the focus area selector dial area is screwed down and you will rip it if you don’t know it’s there. As you lift it off you have to unscrew a screw normally holding the FPC at the red arrow in Figure 7.
 - The FPC on the panel is tacked to the cover’s body with two pieces of double-sided tape (white arrows in Figure 7). The tape can be loosened with a toothpick saturated with isopropyl alcohol. 
 
-For reassembly the hard part is getting the focus area selector dial back into place.
-You need to tape the dial on from the outside during reassembly so that it stays in place temporarily.
-Then as you lower the internal panel back in place, you can screw the sliding contact pin assembly + FPC back down into the dial. 
-
+For reassembly the only delicate part is getting the focus area selector dial back into place.
+Tape the dial on from the outside during reassembly so that it stays in place temporarily.
+Then as you are lowering the internal panel back in place, you can screw the sliding contact pin assembly that sits over the FPC back into the dial. 
 
 <figure>
 <img src="./images/f100_rear_cover_internal_panel.jpg" alt="f100_rear_cover_internal_panel.jpg" width="50%"> 
@@ -260,17 +254,44 @@ Do this outside!
 <figure>
 <img src="./images/f100_epoxied_insert.jpg" alt="f100_epoxied_insert.jpg" width="50%"> 
 <figcaption>
-<i>Figure 10: Finished insert attachment. </i>
+<i>Figure 12. Finished insert attachment. </i>
 </figcaption> 
 </figure>
-
 
 This ordeal took two tries to get right: in the first try I tried to eyeball the insert position without the baseplate as a jig.
 Although position seemed OK to the eye, in reality it was poor enough that trying to reassemble it sheared off the head of my screw.
 
-## Obscure true fact
+## Behavior at various voltages
 
-In the early 2000s Leo Bodnar did some fascinating work on the F100’s predecessor, the F90X:
+The F100's behavior depends heavily on some internal capacitive state which makes precise/"steady-state" measurement of these thresholds tedious and out of scope. In the repair manual A-31 and R-5 list relevant voltage ranges I sought to observe.
+
+- LCD and everything remains totally dead when the battery indication contact is left untouched, as high as I tested up to 6.0 V.
+- With the battery indication contact displaced:
+    - The LCD comes alive at 3.3 V and up. At 3.3 V I could turn my camera on.
+    - Blinking battery LCD symbol with no functionality from 3.3 to 4.0 V any time you push a button. Button presses spike current draw from < 1 mA to 290 mA.
+    - The shutter will fire from as low as 4.1 V, though whether it fires seems to depend a lot on the state of some internal capacitance(?). Raising the supply from 4.0 to 4.1 V the shutter will not fire, but starting the camera cold at 4.1 V seems to consistently allow the shutter to fire. Shutter actuations spike current to 820 mA.
+    - Full battery LCD symbol seems to consistently shows when the camera has recently been supplied above 5.0 V.
+- When the battery indication contact is released while the camera is supplied 5.0 V, behavior becomes erratic. The camera dies a few seconds later. The LCD dies first and other functions follow soon after.
+
+## Experience with 3D-printed cartridges
+I attempted to print Bogdanbogvzyan's design linked above with PLA (Thank you [HackManhattan](https://hackmanhattan.com/)). The print was vertical as the designer suggests. This print failed during assembly due to layer separation and the screws sheared out of their holes. 
+
+Next I ordered a CraftCloud print in PA-12 nylon. 
+It is fragile: the top cap bows out against the batteries' spring pressure. 
+Annoyingly, my print's peg doesn't reliably displace the all-important battery indication contact (See "## Behavior at various voltages"). 
+Not wanting to deal with this anymore I taped some insulation in place under the battery indication contact to semipermanently hold it open. 
+See Figure 13. 
+
+<figure>
+<img src="./images/f100_battery_indication_contact_propped_open.jpg" alt="f100_battery_indication_contact_propped_open.jpg" width="50%"> 
+<figcaption>
+<i>Figure 13: Ceiling of the F100's battery compartment, grip removed (via top + bottom cap...). Battery indication contact is held open via taping a sliver of heat shrink tubing in place (TODO: upload this picture!)</i>
+</figcaption> 
+</figure>
+
+## Obscure true fact, leader-out
+
+In the early 2000s Leo Bodnar did some fascinating work on the F90X:
 - https://geocities.ws/leobodnar/F90X_rewind.html 
 - https://geocities.ws/leobodnar/f90secrets.html 
 
@@ -279,8 +300,7 @@ Leo succeeded in writing to a register on an F90x that controls how much of the 
 Unfortunately the zips on that page are not available anymore. 
 They likely would have described the serial interface. 
 
-I speculate the interface may be the same as the one on the 10-pin, which does have known, surviving implementations.
-F100 manual’s EEPROM register table suspiciously names a “FILM TONGUE" register at 0x0081 for “Ver 4.XX" and at 0x006E for “Ver 5.XX"… there is also a “CHECK SUM" register which may need handling too.
+The interface may be the same as the one on the 10-pin connector, which does have known, surviving implementations. F100 manual’s EEPROM register table suspiciously names a “FILM TONGUE" register at 0x0081 for “Ver 4.XX" and at 0x006E for “Ver 5.XX"… there is also a “CHECK SUM" register which may need handling too.
 
 # Tirade 
 
