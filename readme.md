@@ -29,9 +29,9 @@ If I could go back in time I would urge several points to past-me:
     - Toothpicks and Q-tips 
 - Cleaning chemicals:
     - Distilled water
-    - 99% Isopropyl alcohol (be really limited with using this on the internal "PC-GF20.AL" plastic body as it makes it brittle)
-    - white vinegar (not for use on the plastic but rather for cleaning rust for metal parts that were removed from it)
-    - acetone (turns the plastic into mush instantly on contact. essentially destructive. extremely limited applicability if any. only thing I’d use it for is as a last resort for extremely tight screws, applied with a toothpick)
+    - 99% Isopropyl alcohol (limit using on the internal plastic as it gets brittle)
+    - White vinegar (not for use on the plastic but rather for cleaning rust for metal parts that were removed from it)
+    - Acetone (turns the internal body's "PC-GF20.AL" plastic into mush instantly on contact. Essentially destructive. Extremely limited applicability if any here. Only thing I’d use it for is as a last resort for extremely tight screws, applied with a toothpick)
 - Strong double-sided tape. I used Scotch 9495LE.
 - Soldering iron (to get some delicate ground wires off without damage)
 - Box of 100 nitride gloves 
