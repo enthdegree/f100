@@ -46,7 +46,7 @@ Here are common missing parts I noticed, together with their replacement status:
     - The ring for the F100 seems to have dimensions close or identical to the Nikon DK-17 (for which free replacement models are published), but I haven’t yet found empirical evidence they are interchangeable. You’d still need to find a glass window for those too.
 - Battery cartridge
     - The standard is Nikon MS-12 (4xAA batteries). Ebay price exceeds $100 which is obscene. 
-    - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. A section below details my experience with prints of this design.
+    - Bogdanbogvzyan sells compatible design files for $10 at Cults3D: https://cults3d.com/en/3d-model/gadget/nikon-ms-12-aa-battery-holder-for-f100 . 3D prints of that can be found for $30 shipped. See "## Experience with 3D-printed cartridges" section below.
 - Focus screen
     - The standard is Nikon Type B Focusing Screen 2599. Ebay price is $28. 
     - There are actually aftermarket screens (with split prism!) with correct dimensions on aliexpress: "Dual 45 degree Split Image Focus Focusing Screen for Nikon D1 D1H D1X F100 PR129"
@@ -73,7 +73,7 @@ By the time they cleaned the battery compartment the corrosion had already corru
 Its behavior was erratic:
 
 1. Typically the camera would appear totally dead. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
-2. Rarely the camera would turn on and show the low battery indicator. No function or button worked in this state. If you pushed any button  here the indicator would start blinking.
+2. Rarely the camera would turn on and show the low battery LCD symbol. No function or button worked in this state. If you pushed any button  here the symbol would start blinking.
 3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. Shutter releases 1/2000 and faster would usually misfire and show Err.
 
 The batteries would sometimes heat up quickly. Scary.
@@ -115,7 +115,7 @@ Corrosion cleanup for all the electronics followed the same pattern:
 The symptoms were likely caused by contamination:
 
 - There was crud around the power FPC ribbon. Something around here was the plausibly cause for symptom 1. See Figure 4, red arrow. 
-- A window at the ceiling of the battery compartment exposes a spring-loaded contact. Normally a peg on the MS-12 battery cartridge pushes the switch open, indicating to the body that 4xAA power is expected. A plausible explanation for symptom 2 is that corrosion interfered with this switch opening, thus the body expected a higher voltage from an MB-15 6xAA (The MB-15 has an additional peg compared to the MS-12. The white arrow in Figure 4 points at the contact unique to the MB-15). Very fresh batteries could have put the MS-12's 4xAA just above the failure threshold for MB-15, causing intermittent failures. A section below includes some observations for various voltage ranges. 
+- A window at the ceiling of the battery compartment exposes a spring-loaded "battery indication contact." Normally a peg on the MS-12 battery cartridge displaces the contact to open the switch, and unless that switch is held open then nothing will work. See the "## Behavior at various voltages" section below. A plausible explanation for symptom 2 is that corrosion interfered with this opening.
 - Buttons on the top cover signal depression to the body by shorting a radial pad on the FPC to a ground rail. Symptom 3 was due to contaminants shorting the shutter switch closed around some contact arms. See Figures 5a and 5b.
 
 Separately, removing the metal grip revealed rust-red corrosion that I cleaned off with white vinegar, rinsing thoroughly with water afterwards.
@@ -261,7 +261,7 @@ Do this outside!
 This ordeal took two tries to get right: in the first try I tried to eyeball the insert position without the baseplate as a jig.
 Although position seemed OK to the eye, in reality it was poor enough that trying to reassemble it sheared off the head of my screw.
 
-## Behavior at various voltages
+## Behavior at various voltages + contact states
 
 The F100's behavior depends heavily on some internal capacitive state which makes precise/"steady-state" measurement of these thresholds tedious and out of scope. In the repair manual A-31 and R-5 list relevant voltage ranges I sought to observe.
 
@@ -272,6 +272,9 @@ The F100's behavior depends heavily on some internal capacitive state which make
     - The shutter will fire from as low as 4.1 V, though whether it fires seems to depend a lot on the state of some internal capacitance(?). Raising the supply from 4.0 to 4.1 V the shutter will not fire, but starting the camera cold at 4.1 V seems to consistently allow the shutter to fire. Shutter actuations spike current to 820 mA.
     - Full battery LCD symbol seems to consistently shows when the camera has recently been supplied above 5.0 V.
 - When the battery indication contact is released while the camera is supplied 5.0 V, behavior becomes erratic. The camera dies a few seconds later. The LCD dies first and other functions follow soon after.
+
+The MB-15 6xAA battery grip has a second peg in addition to the one on the MS-12 and MS-13.
+The white arrow in Figure 4 above points at the contact for the peg unique to the MB-15. 
 
 ## Experience with 3D-printed cartridges
 I attempted to print Bogdanbogvzyan's design linked above with PLA (Thank you [HackManhattan](https://hackmanhattan.com/)). The print was vertical as the designer suggests. This print failed during assembly due to layer separation and the screws sheared out of their holes. 
