@@ -1,9 +1,18 @@
 # Nikon F100 Notes
 
-I repaired a Nikon F100 film camera sold for-parts.
-For my camera, an internal cleaning was all that was actually needed to get it working.
+I attempted to repair a Nikon F100 film camera sold for-parts.
 Unfortunately, for lack of documentation and knowledge I created a lot more work for myself than was necessary.
 Here is what I wish I knew before starting.
+
+## A sad outcome, 9 16 2026
+The body worked fine for a few weeks but now something more has gone wrong: after a few moments powered on, the camera becomes unresponsive and cannot be turned off or restored until the batteries are reinstalled. Film rewind and advance have also stopped working. Film detection is fine, showing an error when film is loaded. The shutter and focus screw drive work fine too. 
+
+- It isn't because of weak batteries, since the issue persists with a bench power supply. 
+- It isn't a button comms issue since none of the buttons anywhere on the body work. 
+- It isn't a mechanical issue since supplying the motors with power electrically isolated from the body runs the mechanisms fine. 
+- It isn't cleanable corrosion on the power FPC: I removed, thoroughly cleaned, and reinstalled it with no improvement. This involved soldering and taking off the center assembly, film advance motor, and solenoid assembly. It sounds scary but is really not too bad, not beyond the scope of what's described below.
+
+I speculate without evidence that the whole power FPC and possibly the DC-DC converter on the bottom plate have failed, intermittently causing the CPU to hang sporadically. On the outset my goal should have been to just replace the entire power FPC with one from a donor, but at this point this is too much of a time investment for me. Good luck with your repairs.
 
 ## Preliminaries 
 
@@ -64,7 +73,6 @@ Here are common missing parts I noticed, together with their replacement status:
 </figcaption> 
 </figure>
 
-
 ## Symptoms out of the box
 
 My broken F100 came without the eyepiece and its battery cartridge was shattered. 
@@ -72,16 +80,13 @@ The seller said this camera died from battery corrosion.
 By the time they cleaned the battery compartment the corrosion had already corrupted the inside of the camera.
 Its behavior was erratic:
 
-1. Typically the camera would appear totally dead. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
+1. Typically the camera would appear totally dead. The batteries would sometimes heat up quickly. Sometimes putting batteries in, the LCD would show garbage, sometimes fading out.  
 2. Rarely the camera would turn on and show the low battery LCD symbol. No function or button worked in this state. If you pushed any button  here the symbol would start blinking.
-3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. Shutter releases 1/2000 and faster would usually misfire and show Err.
+3. Very rarely inserting the batteries would power up the camera into an ostensibly-working state for a minute or so. Here the shutter would behave like it was being held down forever after its first press, until a power-cycle. 
 
-The batteries would sometimes heat up quickly. Scary.
-As soon as I noticed this I stopped testing. 
 
 ## Disassembly and cleanup
 
-Corrosion was visible at the seams around the battery compartment/grip.
 The top cover, baseplate and grip had to be removed to expose the contaminants that had leaked into the body.
 I followed the “Disassembly 1. Exterior" section of the F100 repair manual. 
 Also helpful are the afotandovy photographs up to and not including removal of the LCD screen’s screws. 
@@ -123,7 +128,7 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 <figure>
 <img src="./images/f100_corroded_power_fpc.jpg" alt=“f100_corroded_power_fpc.jpg" width="50%"> 
 <figcaption>
-<i>Figure 4:  Power FPC with corrosion. The white arrow points to the battery spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend fairly deep into the camera’s interior. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. It was sufficient to reach them this way rather than through more disassembly.</i> 
+<i>Figure 4:  Power FPC with corrosion. The white arrow points to the battery spring-loaded contact. The red arrow points to an FPC area. Besides the obvious green corrosion around their edges both seemed otherwise clean. They weren't. Symptoms did not resolve until thorough cleaning. Both sides of the spring-loaded contact and the surrounding FPC extend deeper into the grip. Those areas had to be reached carefully with a toothpick saturated with distilled water, then isopropyl alcohol the same way. </i> 
 </figcaption> 
 </figure>
 
@@ -134,8 +139,6 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 </figcaption> 
 </figure>
 
-
-
 <figure>
 <img src="./images/f100_top_cover_radial_pads.jpg" alt=“f100_top_cover_radial_pads.jpg" width="50%"> 
 <figcaption>
@@ -143,12 +146,11 @@ Separately, removing the metal grip revealed rust-red corrosion that I cleaned o
 </figcaption> 
 </figure>
 
-
-..and then everything is supposed to go back on the way it came off. 
+...and then everything is supposed to go back on the way it came off. 
 The grip rubber and diopter cover need new double-sided tape.
-It could’ve been that simple… 
+It could’ve been that simple...
 
-## Addressing damage caused during disassembly (The Odyssey)
+## Addressing damage caused during disassembly
 
 ### Stripped screw
 
@@ -199,14 +201,10 @@ Then as you are lowering the internal panel back in place, you can screw the sli
 </figcaption> 
 </figure>
 
-
 ### Screw boss replacement with a heat insert
 
 Negligently, I failed to notice an obvious screw on the battery compartment while removing the baseplate and I ripped it off, taking most of its boss along with it. 
-Bad!
 I should not have used so much force, should have paid closer attention to the repair manual’s exploded diagrams and counted screws more.
-
-The camera would likely have been OK without this one screw but I wanted to set things “right."
 My approach was to replace it with a similarly shaped M1.6 screw and a brass heat insert encased in epoxy.
 
 I carved away a segment of the shattered boss so the brass heat-insert could be brought nearly into position in free space:
@@ -228,14 +226,12 @@ With the baseplate+screw+insert set on the body I held a soldering iron on the s
 </figcaption> 
 </figure>
 
-
 <figure>
 <img src="./images/f100_baseplate_set_as_jig.jpg" alt="f100_baseplate_set_as_jig.jpg" width="50%"> 
 <figcaption>
 <i>Figure 10: Baseplate as shown in Figure 9 set on the body. A hot iron was held onto the screwhead to conduct heat onto the brass insert, to melt the insert onto what remained of the boss.</i>
 </figcaption> 
 </figure>
-
 
 <figure>
 <img src="./images/f100_insert_embedded_into_boss.jpg" alt="f100_insert_embedded_into_boss.jpg" width="50%"> 
@@ -246,10 +242,8 @@ With the baseplate+screw+insert set on the body I held a soldering iron on the s
 
 Finally I used a toothpick to coat the partially-mounted insert and surrounding area with epoxy. 
 I quickly reinstalled the baseplate+screw before letting the epoxy set. 
-
 Gorilla Ultimate epoxy is one of the most foul things I have smelled in my life. 
 Do this outside!
-
 
 <figure>
 <img src="./images/f100_epoxied_insert.jpg" alt="f100_epoxied_insert.jpg" width="50%"> 
@@ -261,7 +255,7 @@ Do this outside!
 This ordeal took two tries to get right: in the first try I tried to eyeball the insert position without the baseplate as a jig.
 Although position seemed OK to the eye, in reality it was poor enough that trying to reassemble it sheared off the head of my screw.
 
-## Behavior at various voltages + contact states
+## Observed behavior at various voltages + contact states
 
 The F100's behavior depends heavily on some internal capacitive state which makes precise/"steady-state" measurement of these thresholds tedious and out of scope. In the repair manual A-31 and R-5 list relevant voltage ranges I sought to observe.
 
@@ -274,14 +268,13 @@ The F100's behavior depends heavily on some internal capacitive state which make
 - When the battery indication contact is released while the camera is supplied 5.0 V, behavior becomes erratic. The camera dies a few seconds later. The LCD dies first and other functions follow soon after.
 
 The MB-15 6xAA battery grip has a second peg in addition to the one on the MS-12 and MS-13.
-The white arrow in Figure 4 above points at the contact for the peg unique to the MB-15. 
 
 ## Experience with 3D-printed cartridges
 I attempted to print Bogdanbogvzyan's design linked above with PLA (Thank you [HackManhattan](https://hackmanhattan.com/)). The print was vertical as the designer suggests. This print failed during assembly due to layer separation and the screws sheared out of their holes. 
 
 Next I ordered a CraftCloud print in PA-12 nylon. 
 It is fragile: the top cap bows out against the batteries' spring pressure. 
-Annoyingly, my print's peg doesn't reliably displace the all-important battery indication contact (See "## Behavior at various voltages"). 
+My print's peg doesn't reliably displace the all-important battery indication contact (See "## Behavior at various voltages"). 
 Not wanting to deal with this anymore I taped some insulation in place under the battery indication contact to semipermanently hold it open. 
 See Figure 13. 
 
@@ -312,7 +305,7 @@ Looking back I think it only seemed so because of poor information availability.
 Finding obscure technical information is pretty miserable in the age of AI.
 Google hasn’t worked right since before covid. 
 Its replacement, Claude, always tells me I’m a dangerous incompetent who should give up on everything and call 988. 
-Sometimes through its ugly condescension Claude accidentally leaks valuable information and who it learned from.
+Sometimes through its ugly condescension Claude accidentally leaks useful information and who it learned from.
 Sadly I think this will be patched soon. 
 
 Forums, especially Reddit, are virtually exclusively populated by deeply low-rent people.
@@ -327,4 +320,3 @@ If you use Reddit that is embarrassing and you are a bad person.
 <i>A wider communication gamut than Redditors are capable of. </i>
 </figcaption> 
 </figure>
-
