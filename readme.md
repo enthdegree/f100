@@ -12,7 +12,7 @@ The body worked fine for a few weeks but now something more has gone wrong: afte
 - It isn't a mechanical issue since supplying the motors with power electrically isolated from the body runs the mechanisms fine. 
 - It isn't cleanable corrosion on the power FPC: I removed, thoroughly cleaned, and reinstalled it with no improvement. This involved soldering and taking off the center assembly, film advance motor, and solenoid assembly. It sounds scary but is really not too bad, not beyond the scope of what's described below.
 
-I speculate without evidence that the whole power FPC and possibly the DC-DC converter on the bottom plate have failed in some subtle way, sporadically hanging the CPU. On the outset my goal should have been to just replace the entire power FPC with one from a donor, but at this point this is too much of a time investment for me. Good luck with your repairs.
+I speculate without evidence that the whole power FPC and possibly the DC-DC converter on the bottom plate have failed in some subtle way, sporadically hanging the CPU. On the outset my goal should have been to just replace the entire power FPC with one from a donor (or at least to just remove the power FPC and observe it really thoroughly), but at this point this is too much of a time investment for me. Good luck with your repairs.
 
 ## Preliminaries 
 
