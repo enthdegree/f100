@@ -255,11 +255,11 @@ Do this outside!
 This ordeal took two tries to get right: in the first try I tried to eyeball the insert position without the baseplate as a jig.
 Although position seemed OK to the eye, in reality it was poor enough that trying to reassemble it sheared off the head of my screw.
 
-## Observed behavior at various voltages + contact states
+## Observed behavior at various voltages + battery switch states
 
 The F100's behavior depends heavily on some internal capacitive state which makes precise/"steady-state" measurement of these thresholds tedious and out of scope. In the repair manual A-31 and R-5 list relevant voltage ranges I sought to observe.
 
-- LCD and everything remains totally dead when the battery indication contact is left untouched, as high as I tested up to 6.0 V.
+- LCD and everything remains totally dead when the battery indication contact (Battery Identification SW0 on page E-16 of the repair manual) is left untouched, as high as I tested up to 6.0 V.
 - With the battery indication contact displaced:
     - The LCD comes alive at 3.3 V and up. At 3.3 V I could turn my camera on.
     - Blinking battery LCD symbol with no functionality from 3.3 to 4.0 V any time you push a button. Button presses spike current draw from < 1 mA to 290 mA.
@@ -267,7 +267,7 @@ The F100's behavior depends heavily on some internal capacitive state which make
     - Full battery LCD symbol seems to consistently shows when the camera has recently been supplied above 5.0 V.
 - When the battery indication contact is released while the camera is supplied 5.0 V, behavior becomes erratic. The camera dies a few seconds later. The LCD dies first and other functions follow soon after.
 
-The MB-15 6xAA battery grip has a second peg in addition to the one on the MS-12 and MS-13.
+The MB-15 6xAA battery grip has a second peg in addition to the one on the MS-12 and MS-13. (Battery Identification SW1 on page E-16 of the repair manual).
 
 ## Experience with 3D-printed cartridges
 I attempted to print Bogdanbogvzyan's design linked above with PLA (Thank you [HackManhattan](https://hackmanhattan.com/)). The print was vertical as the designer suggests. This print failed during assembly due to layer separation and the screws sheared out of their holes. 
